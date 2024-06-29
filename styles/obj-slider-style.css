@@ -1,0 +1,113 @@
+.obj-slider{
+    padding: 120px 0;
+}
+.obj-slider .container{
+    display: flex;
+}
+.slider-info{
+    width: 600px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 1);
+    align-self: flex-end;
+    border: 1px solid rgba(67, 67, 67, 0.1)
+
+}
+.slider-info p{
+    margin-bottom: 12px;
+}
+.slider-info p:last-child{
+    margin-bottom: 0;
+}
+.slider{
+    width: 600px;
+    height: 375px;
+    background: rgba(131, 131, 82, 1);
+    margin-bottom: 40px;
+    margin-left: -20px;
+}
+
+.slider .swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper:hover{
+    transform: translate(20px, -20px);
+    transition: all 0.5s ease;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    width: 51px;
+    height: 51px;
+    background: rgba(249, 249, 249, 1);
+    color: rgba(67, 67, 67, 1);
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 17px;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+    opacity: .6;
+}
+
+.swiper-pagination-fraction{
+    color: rgba(206, 206, 206, 1);
+    font-size: 22px;
+}
+.swiper-pagination-current{
+    color: rgba(249, 249, 249, 1);
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    width: max-content;
+    left: 70px;
+}
+
+@media (max-width:1050px) {
+    .obj-slider{
+        padding: 36px 0;
+    }
+    .obj-slider .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider-info{
+        order: 1;
+        align-self: center;
+        width: 100%;
+    }
+    .slider{
+        width: 100%;
+        order: 0;
+        margin-left: 0;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 915px) {
+    .object-card .map-info__text {
+        padding: 75px 0 84px;
+    }
+    .hotline .map-info__text{
+        padding-top: 75px;
+    }
+}
+@media (max-width:500px) {
+    .slider{
+        height: 180px;
+    }
+    .slider-info{
+        padding: 20px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        width: 37px;
+        height: 37px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        left: 45px;
+        font-size: 16px;
+    }
+}

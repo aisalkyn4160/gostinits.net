@@ -1,0 +1,105 @@
+.map-block{
+    background-color: rgba(243, 242, 240, 1);
+    position: relative;
+    overflow: hidden;
+}
+.losung{
+    color: rgba(67, 67, 67, .03);
+    font-family: 'Raleway', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0.025em;
+}
+.map-info{
+   /* display: flex; */
+}
+
+.map-info__text{
+    width: 45%;
+    padding: 175px 0px;
+}
+
+.map-info__text h2{
+    margin-bottom: 60px;
+    max-width: 389px;
+    letter-spacing: 0.025em;
+}
+
+.map-info__text h2 span{
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(131, 131, 82, 1);
+}
+
+.map-info__text p{
+    margin-bottom: 12px;
+}
+.list li{
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 16px;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: rgba(131, 131, 82, 1);
+    border-radius: 50%;
+    margin-top: 7px;
+}
+#map{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.contact-info li{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    color: rgba(67, 67, 67, .7);
+
+}
+
+.contact-info li svg{
+    height: 30px;
+}
+.contact-info .mail{
+    color: rgba(131, 131, 82, 1);
+    text-decoration: underline;
+}
+
+.contact-info  span{
+    display: inline-block;
+    color: rgba(67, 67, 67, 1);
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+
+@media (max-width:915px) {
+    .map-info__text{
+        width: 100%;
+        padding: 140px 0 32px;
+    }
+    .map-info__text h2{
+        margin-bottom: 20px;
+    }
+    #map{
+        width: 100vw;
+        height: 600px;
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+    .losung{
+        font-size: 80px;
+        line-height: 57px;
+    }
+   
+}
