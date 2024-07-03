@@ -52,6 +52,24 @@ svg{
 .object-card .metro span{
     color: rgba(206, 206, 206, 1);
 }
+
+.object-card .map-info__text{
+    padding: 135px 0 148px;
+}
+.object-card .map-info__text h2{
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.object-card #map{
+    width: 60%;
+    left: 55%;
+}
+@media (max-width: 915px) {
+    .object-card #map{
+        width: 100vw;
+        left: 0;
+    }
+}
 @media (max-width:750px) {
     .main-obj{
         padding: 70px 0 80px;
@@ -70,6 +88,6 @@ svg{
         font-size: 36px;
         margin-top: 36px;
     }
-
+    
 
 }

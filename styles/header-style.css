@@ -21,7 +21,7 @@
 }
 .header .nav-menu{
     width: 80%;
-    padding: 15px 54px;
+    padding: 18px 54px;
     border-left: 1px solid rgba(253, 253, 253, .3);
     border-right: 1px solid rgba(253, 253, 253, .3);
 }
@@ -105,7 +105,6 @@
         stroke: rgba(67,67,67,1);
     }
     .header-content{
-        /* width: calc(100% - 20px); */
         position: absolute;
         top: 40px;
         left: -300%;
@@ -118,8 +117,6 @@
         left: 0px;
     }
     .header .nav-menu{
-        /* width: max-content;
-        margin-top: 80px; */
         padding: 40px 15px;
     }
     .header .nav-menu ul{

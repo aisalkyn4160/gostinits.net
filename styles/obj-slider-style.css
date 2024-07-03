@@ -93,7 +93,7 @@
         padding: 75px 0 84px;
     }
     .hotline .map-info__text{
-        padding-top: 75px;
+        padding: 75px 0;
     }
 }
 @media (max-width:500px) {
